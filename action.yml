@@ -9,7 +9,7 @@ runs:
     - name: Setup .NET Core SDK
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: '5.0'
+        dotnet-version: '8.0'
 
     - name: Build and Publish
       run: dotnet publish -c Release -o ./publish
