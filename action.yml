@@ -19,3 +19,5 @@ runs:
       uses: pantaSanjesh/Portfolio@v1.0.0
       with:
         path: '/var/www/html'
+
+shell: bash  # Specify the default shell at the top level
