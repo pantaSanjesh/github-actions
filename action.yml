@@ -13,7 +13,7 @@ runs:
         dotnet-version: '8.0'
 
     - name: Build and Publish
-     shell: bash
+      shell: bash
       run: dotnet publish -c Release -o ./publish
       
     - name: Deploy to Server
@@ -21,4 +21,4 @@ runs:
       with:
         path: '/var/www/html'
 
-shell: bash  # Specify the default shell at the top level
+
