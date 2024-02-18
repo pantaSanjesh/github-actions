@@ -2,7 +2,7 @@ name: 'Deploy .NET MVC App'
 description: 'Deploy the .NET MVC application to a server'
 runs:
   using: 'composite'
-  shell: bash
+  
   steps:
     - name: Checkout code
       uses: actions/checkout@v2
@@ -14,9 +14,8 @@ runs:
 
     - name: Build and Publish
       run: dotnet publish -c Release -o ./publish
-
+      
     - name: Deploy to Server
       uses: pantaSanjesh/Portfolio@v1.0.0
       with:
-     
         path: '/var/www/html'
